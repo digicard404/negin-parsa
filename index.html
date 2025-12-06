@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ویدئو کارت دعوت</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+   <!-- ویدئو -->
+<video id="weddingVideo" class="wedding-video" 
+src="https://s21.uupload.ir/files/digicard12/InShot_۲۰۲۵۱۲۰۳_۱۰۴۰۵۴۹۷۱.mp4?play" 
+controls 
+playsinline>
+</video>
+
+    <!-- تایمر معکوس -->
+     <div class="timer-wrapper">
+    <h3 class="timer-title">تا مراسم عروسی ما 💍</h3>
+
+    <div class="timer-grid">
+        <div class="time-box">
+            <span class="time-label">روز</span>
+            <span id="day" class="time-number">00</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-label">ساعت</span>
+            <span id="hour" class="time-number">00</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-label">دقیقه</span>
+            <span id="min" class="time-number">00</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-label">ثانیه</span>
+            <span id="sec" class="time-number">00</span>
+        </div>
+
+    
+    </div>
+</div>
+
+<!-- تایید حضور مهمان -->
+ 
+<div class="rsvp-box">
+    <h3 class="rsvp-title">تایید حضور مهمان</h3>
+
+    <input type="text" id="guestName" class="rsvp-input" placeholder="اسم شما">
+
+    <div class="rsvp-buttons">
+        <button onclick="sendRSVP('yes')" class="yes-btn">میام 🌸</button>
+        <button onclick="sendRSVP('no')" class="no-btn">نمیام 💐</button>
+    </div>
+</div>
+
+
+    <!-- دکمه لوکیشن -->
+    <a class="location-btn" href="https://www.google.com/maps/place/%D8%AA%D8%A7%D9%84%D8%A7%D8%B1+%D9%82%D8%B5%D8%B1%DA%A9%DB%8C%D8%A7%D9%86%E2%80%AD/@35.7154324,51.4978,15.5z/data=!4m6!3m5!1s0x3f8e02e9bc4cbe0b:0xc082cc8a5003acb!8m2!3d35.715456!4d51.4924361!16s%2Fg%2F11by_mb934?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        مشاهده موقعیت روی نقشه
+    </a>
+
+    
+</div>
+
+<footer class="insta-footer">
+  <a href="https://instagram.com/digi__card">
+    digi__card
+  </a>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
